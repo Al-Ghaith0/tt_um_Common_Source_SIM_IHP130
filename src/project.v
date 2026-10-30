@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-module tt_um_CS_stage_test (
+module tt_um_Common_Source_SIM_est (
     input  wire       VGND,
     input  wire       VDPWR,    // 1.8v power supply
 //    input  wire       VAPWR,    // 3.3v power supply
