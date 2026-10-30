@@ -1,12 +1,17 @@
 # Common Source Stage with Active Load (IHP130):
 This project is for simualtion and derivation of the famous Common Source stage with active load on IHP130 PDK
+
 It has a completed schematic file using Xschem and it includes: PTAT circuit, Startup circuit and the common source stage
+
 The Transfer Function derived showed more than 90% accuracy comopared to SPICE simualtion
 
 # Key Highlights & Specifications
 Process Node: IHP 130nm (SG13G2)
+
 Toolchain: Xschem (schematic capture), Ngspice (simulation), Python/Octave (for math verification)
+
 Topology: Common Source with an active load
+
 Validation Metric: >90% analytical-to-simulation accuracy across the frequency band.
 
 
