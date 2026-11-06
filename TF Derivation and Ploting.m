@@ -64,10 +64,10 @@ gm16 = 2 * I17 / Veffe16
 rds16 = 64 / I17
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %TF derivation
-C1 = Csbp16 + Cgsp16
+C1 = Csbp16
 C2 = Cgdp16
 C3 = Cgdn17
-C4 = Cgsn17 + Csbn17
+C4 = Cgsn17
 C5 = Cdbn17 + Cdbp16
 R20 = 10 / gm16 + rds16*rds17/(rds16+rds17) + 10 * rds16*rds17/(rds16+rds17)
 R30 = 10/gm17 + rds16*rds17/(rds16+rds17) + 10 * rds16*rds17/(rds16+rds17)
@@ -77,6 +77,6 @@ a0 = rds16*rds17/(rds16+rds17)*gm17
 a1 = 10*C1/gm16*gm17*rds16*rds17/(rds16+rds17) + R20*C2*gm17*10/gm16 + R30*C3*rds16*gm17/(rds16*gm17)
 nm = [a1,a0];
 de = [b2,b1,1];
-TF = tf(nm,de)
+TF = tf(-nm,de)
 bode(TF);
 margin(TF);
